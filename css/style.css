@@ -494,6 +494,8 @@ body {
     }
 
     .fairy-tail__slider,
+    .our-trip__slider,
+    .our-trip__title,
     .slick-slide img {
         width: 100%;
     }
@@ -502,6 +504,26 @@ body {
         width: 100%;
         padding-left: 0;
     }
+
+    .our-trip__content {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    .our-trip__body {
+        flex-direction: inherit;
+        flex-wrap: wrap;
+    }
+
+    .our-trip__list {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .our-trip__btn {
+        margin: 25px 0;
+    }
+
 }
 
 
@@ -526,8 +548,14 @@ body {
         height: 25px;
         background-size: cover;
     }
+
     .title {
         margin-bottom: 50px;
+    }
+
+    .our-trip__list,
+    .our-trip__btn {
+        font-size: 20px;
     }
 }
 
@@ -553,20 +581,42 @@ body {
         margin-top: -46px;
         margin-right: 15px;
     }
+
     .fairy-tail__item img {
         height: 50vh;
         object-fit: cover;
     }
+
     .page-section {
         margin: 50px 0;
     }
+
     .title {
         margin-bottom: 25px;
         font-size: 60px;
         line-height: 110px;
     }
+
     .fairy-tail__title span {
         margin-left: 110px;
+    }
+
+    .our-trip__title span {
+        margin-left: 150px;
+    }
+
+    .our-trip__list,
+    .our-trip__btn {
+        line-height: 22px;
+    }
+
+    .our-trip__slider-item img {
+        height: 65vh;
+        object-fit: cover;
+    }
+
+    .our-trip__list {
+        width: 100%;
     }
 }
 
@@ -588,13 +638,15 @@ body {
     .header__top {
         padding-top: 50px;
     }
+
     .title {
         font-size: 50px;
-
     }
+
     .title span {
         font-size: 20px;
     }
+
     .fairy-tail__title span {
         margin-left: 90px;
     }
