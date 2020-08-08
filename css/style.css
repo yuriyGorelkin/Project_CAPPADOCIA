@@ -505,6 +505,21 @@ body {
 
 }
 
+@media (max-width: 1080px) {
+    .contacts__images {
+        height: 110vh;
+        object-fit: cover;
+    }
+
+    .contacts__form-title {
+        margin-bottom: 30px;
+    }
+
+    .contacts__info {
+        margin-right: 15px;
+    }
+}
+
 
 @media (max-width: 991px) {
     .page-section {
@@ -549,6 +564,10 @@ body {
 
     .price {
         background-position: center right 1%;
+    }
+
+    .contacts__images {
+        height: 85vh;
     }
 
 }
@@ -609,6 +628,28 @@ body {
         font-size: 22px;
         line-height: 24px;
         margin-bottom: 25px;
+    }
+
+    .contacts__inner {
+        display: inherit;
+        text-align: center;
+    }
+
+    .contacts__content {
+        text-align: center;
+    }
+
+    .contacts__info {
+        margin-bottom: 35px;
+    }
+
+    .contacts__form {
+        margin: 0 auto 25px;
+    }
+
+    .contacts__form-btn {
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -680,17 +721,87 @@ body {
     .price {
         background-position: bottom right 5%;
     }
+
     .price__on,
     .price__off {
         line-height: 22px;
         width: 100%;
     }
-    .price__on-title, .price__off-title {
+
+    .price__on-title,
+    .price__off-title {
         font-size: 20px;
-        line-height: 22px;        
+        line-height: 22px;
     }
+
     .price__list-item {
         margin-bottom: 15px;
+    }
+
+    .contacts__inner {
+        text-align: left;
+    }
+
+    .contacts__content {
+        text-align: left;
+    }
+
+    .contacts__form {
+        margin: 0 0 25px;
+    }
+
+    .contacts__date,
+    .contacts__price {
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .contacts__date {
+        margin-bottom: 10px;
+    }
+
+    .contacts__date span,
+    .contacts__price span {
+        font-size: 24px;
+        line-height: 28px;
+        margin-left: 75px;
+    }
+
+    .contacts__form-title {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .contacts__form-input {
+        padding: 10px 31px;
+
+    }
+
+    .contacts__form-btn {
+        padding: 8px 25px;
+    }
+
+}
+
+@media (max-width: 425px) {
+    .contacts__images {
+        height: 68vh;
+    }
+
+    .contacts__form {
+        max-width: 320px;
+    }
+
+    .contacts__form-btn,
+    .contacts__form-input {
+        font-size: 20px;
+        line-height: 22px;
+        padding: 6px 15px;
+    }
+
+    .contacts__form-title {
+        font-size: 18px;
+        line-height: 20px;
     }
 }
 
@@ -713,11 +824,15 @@ body {
         padding-top: 50px;
     }
 
-    .title {
+    .title,
+    .contacts__date,
+    .contacts__price {
         font-size: 50px;
     }
 
-    .title span {
+    .title span,
+    .contacts__date span,
+    .contacts__price span {
         font-size: 20px;
     }
 
@@ -731,5 +846,29 @@ body {
 
     .hotel__text {
         line-height: 20px;
+    }
+
+    .price__on,
+    .price__off,
+    .price__on-title,
+    .price__off-title {
+        line-height: 20px;
+        font-size: 18px;
+    }
+
+    .price__on-title,
+    .price__off-title {
+        margin-bottom: 20px;
+    }
+
+    .contacts__date,
+    .contacts__price {
+        line-height: 60px;
+    }
+
+    .contacts__date span,
+    .contacts__price span {
+        line-height: 22px;
+        margin-left: 61px;
     }
 }
