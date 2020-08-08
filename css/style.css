@@ -499,6 +499,10 @@ body {
         margin: 0 10px 10px 0;
     }
 
+    .price {
+        background-image: url('../images/price-bg-small.png');
+    }
+
 }
 
 
@@ -543,6 +547,10 @@ body {
         margin: 25px 0;
     }
 
+    .price {
+        background-position: center right 1%;
+    }
+
 }
 
 
@@ -575,6 +583,32 @@ body {
     .our-trip__list,
     .our-trip__btn {
         font-size: 20px;
+        line-height: 24px;
+    }
+
+    .price__inner {
+        display: block;
+    }
+
+    .price {
+        background-position: center right 5%;
+    }
+
+    .price__on,
+    .price__off {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .price__on {
+        margin-bottom: 35px;
+    }
+
+    .price__on-title,
+    .price__off-title {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 25px;
     }
 }
 
@@ -642,6 +676,22 @@ body {
         height: 75vh;
         object-fit: cover;
     }
+
+    .price {
+        background-position: bottom right 5%;
+    }
+    .price__on,
+    .price__off {
+        line-height: 22px;
+        width: 100%;
+    }
+    .price__on-title, .price__off-title {
+        font-size: 20px;
+        line-height: 22px;        
+    }
+    .price__list-item {
+        margin-bottom: 15px;
+    }
 }
 
 @media (max-width: 370px) {
@@ -678,6 +728,7 @@ body {
     .hotel__images {
         height: 65vh;
     }
+
     .hotel__text {
         line-height: 20px;
     }
