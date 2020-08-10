@@ -411,6 +411,7 @@ body {
     text-align: center;
     background-image: url('../images/footer-info-bg.png');
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .footer__contacts-title {
@@ -503,6 +504,13 @@ body {
         background-image: url('../images/price-bg-small.png');
     }
 
+    .footer__inner {
+        justify-content: space-around;
+    }
+
+    .footer {
+        padding-top: 45px;
+    }
 }
 
 @media (max-width: 1080px) {
@@ -518,8 +526,11 @@ body {
     .contacts__info {
         margin-right: 15px;
     }
-}
 
+    .footer__inner {
+        flex-wrap: wrap;
+    }
+}
 
 @media (max-width: 991px) {
     .page-section {
@@ -570,8 +581,23 @@ body {
         height: 85vh;
     }
 
-}
+    .footer__contacts {
+        height: 465px;
+        width: 317px;
+    }
 
+    .footer__contacts-title {
+        font-size: 76px;
+        line-height: 105px;
+        margin-bottom: 20px;
+        padding-top: 40px;
+    }
+
+    .footer__text {
+        font-size: 60px;
+        line-height: 70px;
+    }
+}
 
 @media (max-width: 840px) {
     .header__title {
@@ -751,7 +777,8 @@ body {
     }
 
     .contacts__date,
-    .contacts__price {
+    .contacts__price,
+    .footer__contacts-title {
         font-size: 60px;
         line-height: 70px;
     }
@@ -774,13 +801,24 @@ body {
 
     .contacts__form-input {
         padding: 10px 31px;
-
     }
 
     .contacts__form-btn {
         padding: 8px 25px;
     }
 
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer__contacts-title {
+        padding-top: 60px;
+    }
+
+    .footer__text {
+        font-size: 40px;
+        line-height: 50px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -802,6 +840,20 @@ body {
     .contacts__form-title {
         font-size: 18px;
         line-height: 20px;
+    }
+
+    .footer {
+        width: 100%;
+    }
+
+    .footer__inner {
+        justify-content: center;
+    }
+
+    .footer__text {
+        width: 100%;
+        text-align: center;
+        margin-top: 35px;
     }
 }
 
@@ -870,5 +922,11 @@ body {
     .contacts__price span {
         line-height: 22px;
         margin-left: 61px;
+    }
+
+    .footer__text {
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 10px;
     }
 }
